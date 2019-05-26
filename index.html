@@ -3,17 +3,80 @@
 		<link rel="stylesheet" type="text/css" href="interface.css" />
 	</head>
 	<body>
-		<button onclick="tableLegClick(1)">Click Me!</button>
+		<button onclick="tableLegClick()">Make Table Legs</button>
 		<br />
 		TableLegs: <span id="tableLegs">0</span>
+		<br /><br />
+		
+		
+		<button onclick="sellTableLegClick(10)">Sell Table Legs(10)</button>
 		<br />
+		Sell price: $75
+		<br />
+		Money: <span id="money">0</span>
+		<br /><br /><br />
+		
+		<button onclick="buildChairs(1)">Build a Chair</button>
+		<br />
+		ChairPrice: $50 and 4 Table Legs
+		<br />
+		chairs: <span id="chairCount">0</span>
+		<br /><br />
+		
+		<button onclick="sellChairs(1)">Sell a Chair</button>
+		<br /><br />
+		
+		
+		<button onclick="buildTables(1)">Build a Table</button>
+		<br />
+		TablePrice: $100 and 4 Table Legs
+		<br />
+		tables: <span id="tableCount">0</span>
+		<br /><br />
+		
+		<button onclick="sellTables(1)">Sell a Table</button>
+		<br />
+		Sell price: $150
+		<br />
+		Money: <span id="money">0</span>
+		<br /><br /><br />
+		
+		
+		
+		<button onclick="upgradeToolBox()">Upgrade Toolbox</button>
+		<br />
+		Toolbox level: <span id="toolBoxUpgradeLevel">0</span>
+		<br />
+		upgrade cost: <span id="toolBoxUpgradeCost">1</span>
+		<br /><br />
+		
+		<button onclick="upgradeChair()">Upgrade Chair</button>
+		<br />
+		Chair level: <span id="chairUpgradeLevel">0</span>
+		<br />
+		upgrade cost: <span id="chairUpgradeCost">5</span>
+		<br /><br />
+		
+		<button onclick="upgradeWorkStation()">Upgrade WorkStation</button>
+		<br />
+		WorkStation level: <span id="workStationUpgradeLevel">0</span>
+		<br />
+		upgrade cost: <span id="workStationUpgradeCost">10</span>
+		<br /><br /><br />
+		
+		
+		
+		
+		
+		
+		
 		
 		<button onclick="buyApprentice()">Buy Apprentice</button>
 		<br />
 		Apprentices: <span id="apprentices">0</span>
 		<br />
 		Apprentice Cost: <span id="apprenticeCost">10</span>
-		<br />
+		<br /><br />
 		
 		
 		<button onclick="promoteApprentice()">Promote Apprentice</button>
@@ -21,7 +84,7 @@
 		Apprentices: <span id="jrApprentices">0</span>
 		<br />
 		Apprentice Cost: <span id="jrApprenticeCost">250</span>
-		<br />
+		<br /><br /><br />
 		
 		
 		
@@ -30,7 +93,79 @@
 		Hammers: <span id="hammers">0</span>
 		<br />
 		Hammer Cost: <span id="hammerCost">10</span>
+		<br /><br />
 		
+		
+		
+		<button onclick="hireSalesman()">Hire Salesman</button>
+		<br />
+		Salesmen: <span id="salesmen">0</span>
+		<br />
+		Salesman Cost: <span id="salesmanCost">500</span>
 		<script type="text/javascript" src="main.js"></script>
+		<br /><br />
+		
+		<button onclick="hireCandyBarSalesman()">Hire CandyBar Salesman</button>
+		<br />
+		CandyBar Salesmen: <span id="candyBarSalesmen">0</span>
+		<br />
+		Candybar Salesman Cost: <span id="candyBarSalesmanCost">15000</span>
+		<script type="text/javascript" src="main.js"></script>
+		<br /><br /><br />
+		
+		
+		<button onclick="unlockChairBuilding()">Unlock Chairs</button>
+		<br />
+		Chairs Status: <span id="chairUnlocked">"Locked"</span>
+		<br />
+		Unlock Cost: <span id="unlockChairCost">25000</span>
+		<script type="text/javascript" src="main.js"></script>
+		<br /><br />
+		
+		<button onclick="hireChairBuilder()">Hire a Chair Builder</button>
+		<br />
+		Chair Builders: <span id="chairBuilders">0</span>
+		<br />
+		Chair Builder Cost: <span id="chairBuilderCost">7500</span>
+		<script type="text/javascript" src="main.js"></script>
+		<br /><br />
+		
+		<button onclick="promoteToSeniorChairBuilder()">Promote a Chair Builder</button>
+		<br />
+		Chair Builders: <span id="seniorChairBuilders">0</span>
+		<br />
+		Chair Builder Cost: <span id="seniorChairBuilderCost">7500</span>
+		<script type="text/javascript" src="main.js"></script>
+		<br /><br />
+		
+		
+		<button onclick="unlockTableBuilding()">Unlock Tables</button>
+		<br />
+		Tables Status: <span id="tableUnlocked">"Locked"</span>
+		<br />
+		Unlock Cost: <span id="unlockTableCost">50000</span>
+		<script type="text/javascript" src="main.js"></script>
+		<br /><br />
+		
+		<button onclick="hireTableBuilder()">Hire a Table Builder</button>
+		<br />
+		Table Builders: <span id="tableBuilders">0</span>
+		<br />
+		Table Builder Cost: <span id="tableBuilderCost">15000</span>
+		<script type="text/javascript" src="main.js"></script>
+		<br /><br />
+		
+		<button onclick="promoteToSeniorTableBuilder()">Promote a Table Builder</button>
+		<br />
+		Table Builders: <span id="seniorTableBuilders">0</span>
+		<br />
+		Table Builder Cost: <span id="seniorTableBuilderCost">100000</span>
+		<script type="text/javascript" src="main.js"></script>
+		<br /><br />
+		
+		
+		
+		
+		
 	</body>
 </html>
