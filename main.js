@@ -4,8 +4,8 @@
 var incLegCount = 1;
 
 //Materials/currency
-var tableLegs = 50000;
-var money = 10000000;
+var tableLegs = 0;
+var money = 0;
 var chairs = 0;
 var tables = 0;
 
@@ -169,7 +169,7 @@ function upgradeWorkStation(){
 function sellTableLegClick(number){
 	if(tableLegs>=number&&number%10==0){
 		tableLegs-=number;
-		money += number / 10;
+		money += (number / 10) * 75;
 
 	};
 	document.getElementById("money").innerHTML = money;
